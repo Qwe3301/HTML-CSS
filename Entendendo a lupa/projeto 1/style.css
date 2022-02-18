@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #00a8ff; 
+}
+/*aqui tem que usar outro tipo de comentario, mas aqui deixamos tudo zerado por algum motivo, algum dia descubro*/
+
+.pesquisa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #353b48;
+    height: 30px;
+    width: auto;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Essa é a formatação da "div" basicamente*/
+}
+.texto{
+    border:none;
+    background: none;
+    outline: none;
+    color:rgb(255, 255, 255);
+    padding: 0;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    /*texto de dentro, cor e tamanho e talss s estranhamente aqui que se colocar para mudar o tamanho, 
+    e eu pensei que o que "formataria a div" seria o .pesquisar, mas tenho que saber mais*/
+}
+.lupa{
+    border-radius: 50%;
+    background-color: none;
+    padding: 05px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+/* aqui basicamente é a lupa, basiamente o que diz ali em cima é "deixe no centro e redondo karalho"*/
+
+.pesquisa:hover > .texto{
+    background-color: none;
+    width: 240px;
+}
+/*aqui é a animação para abrir a barra de pesquisa,e mudei o widht para auto kkk acho que ele ja é padrão, mas gostei, enfim, so 
+lembrar de colocar o tempo certo*/
+.pesquisa:hover > .lupa{
+    background-color: white;
+} 
+/*animação do botão lupa, mesma coisa, só que eu me esqueci de colocar border-radius e foi chato pensar que era isso kk mo otario eu*/

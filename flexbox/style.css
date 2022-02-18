@@ -1,0 +1,110 @@
+body, ul , li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:50px ;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color:rgb(0, 65, 43) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.menu {
+    display: flex;
+}
+.menu li{
+    margin: 20px;
+}
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.flex {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+/*css flexbox*/
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    grid-gap: 20px
+
+}
+.titulo2{
+    text-align: center;
+}
+
+.grid1> div:nth-child(n+4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+.grid1> div.anuncio {
+    grid-column: 1;
+    grid-row: 2/5;
+    display: block;
+}
+  
+@media (max-width:600px){
+    .grid1{ 
+        grid-template-columns: repeat(2,1fr);
+    }
+
+.grid1> div:nth-child(n+4){
+    display: block;
+}
+.grid1 > div.anuncio {
+    grid-column: auto;
+    grid-row: auto;
+    order: -1;
+}}
+
+/*css grid2*/
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    margin-top: 40px;
+    grid-gap: 20px;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.siderbar > div {
+    margin-bottom:10px ;
+}
+
+@media (max-width:600px){
+.grid2{
+    grid-template-columns: 1fr;
+}
+.sidebar {
+    display: flex;
+    overflow: scroll;
+}
+.sidebar > div { 
+    flex: 1 0 200px;
+    margin:0 10px;
+}
+}

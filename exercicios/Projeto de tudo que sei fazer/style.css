@@ -1,0 +1,88 @@
+/*Fonte importada*/
+@font-face {
+    font-family: "antiga";
+    src: url(fonte/OldLondon.ttf) 
+    format("truetype");
+    font-weight: normal;
+    font-style: normal;}
+
+/*fundo*/
+body {
+    padding: 0;
+    margin: 0;
+    background: #00a8ff;}
+
+/*Cabeçario*/
+header{
+    width: 1200px;
+    height: 100px;
+    background-color: #B63B3E;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;}
+
+/*Menu de opçoes*/
+.menu{
+    display: flex;
+    justify-content: space-between;}
+.menu li {
+    padding: 0px 20px 0px 20px;}
+.titulo{
+    font-size: 80px;
+    font-family: "antiga";}
+a{
+    text-decoration: none;
+    color: black;
+    display: inline;}
+
+ul{
+    list-style: none;}
+.certo{
+    display: flex;
+    align-items: center;}
+.certo li {
+    padding: 10px;}
+.menu, .menu2 {
+    font-size: 20px;
+   
+}
+
+
+/*caixa de pesquisa*/
+.caixa{
+    position: left;
+    background: #353b48;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.texto{
+    border: none;
+    background: none;
+    outline:none;
+    color: white;
+    padding: 0;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition:.5s;}
+.lupa{
+    border-radius: 50%;
+    background: none;
+    padding: 05px;
+    justify-content:center;
+    align-items: center;
+    transition: .5s;}
+
+.caixa:hover > .texto{
+    width: 240px;
+    padding: 0 6px;}
+.caixa:hover > .lupa {
+    background: #f0f5fb;}
+/*fim pesquisa*/
+    
+    
